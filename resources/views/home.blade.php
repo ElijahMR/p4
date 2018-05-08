@@ -5,8 +5,8 @@
 @endsection
 
 @section('content')
-    <h1 class='display-4'>Hello {{ $user->name }}!</h1>
-    <div class='row justify-content-center pt-2'>
+    <h1 class='display-4 pt-5'>Hello {{ $user->name }}!</h1>
+    <div class='row justify-content-center pt-5'>
         <div class='col-md-4 col-sm-1'>
             <div class='card text-white bg-dark mb-3'>
                 <div class='card-body'>
@@ -16,7 +16,7 @@
             </div>
         </div>
     </div>
-    <h5 class='pt-5'>Your Last Added 3 Games:</h5>
+    <h5 class='pt-5'>Your Last 3 Added Games:</h5>
     <div class='row justify-content-center pt-2'>
         @foreach($newGames as $game)
             <div class='col-md-4 col-sm-1'>

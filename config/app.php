@@ -10,7 +10,7 @@ return [
 
    'nav1' => [
         '/home' => 'Home',
-        '/games/add' => 'Games',
+        '/games' => 'Games',
         '/friends' => 'Friends',
         '/games/night' => 'Start A Game Night',
     ],
@@ -172,6 +172,7 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+        App\Providers\ViewServiceProvider::class,
 
     ],
 
