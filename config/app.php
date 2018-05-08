@@ -2,6 +2,22 @@
 
 return [
 
+
+   'nav' => [
+        '/register' => 'Register',
+        '/login' => 'Login',
+    ],
+
+   'nav1' => [
+        '/books' => 'Books',
+        '/books/create' => 'New Book',
+        '/books/search' => 'Search',
+        '/trivia' => 'Trivia',
+        '/practice' => 'Practice',
+        '/about' => 'About',
+        '/contact' => 'Contact',
+    ],
+
     /*
     |--------------------------------------------------------------------------
     | Application Name

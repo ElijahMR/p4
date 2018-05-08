@@ -11,9 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'GameController@welcome');
 
 Route::get('/debug', function () {
 
@@ -41,3 +39,7 @@ Route::get('/debug', function () {
 
     dump($debug);
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
