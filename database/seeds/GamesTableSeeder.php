@@ -13,12 +13,12 @@ class GamesTableSeeder extends Seeder
     public function run()
     {
         $games = [
-            ['Counter-Strike: Global Offensive', 'https://images.igdb.com/igdb/image/upload/t_cover_big/tjavlrx5y8lkol7uql40.jpg', 'https://store.steampowered.com/app/730', '10'],
-            ['Overwatch', 'https://images.igdb.com/igdb/image/upload/t_cover_big/fen88hu0vhcf3k3owkxd.jpg', 'https://playoverwatch.com/en-us/', '12'],
-            ['Fortnite', 'https://images.igdb.com/igdb/image/upload/t_cover_big/j7lazlgtms7siqn7fn5y.jpg', 'https://www.epicgames.com/fortnite/en-US/home', '4'],
-            ['Worms W.M.D', 'https://images.igdb.com/igdb/image/upload/t_cover_big/p68pv3gyvbljw69zko3m.jpg', 'https://store.steampowered.com/app/327030', '6'],
-            ['Killing Floor 2', 'https://images.igdb.com/igdb/image/upload/t_cover_big/ttt9dlzwz5msfkgfi4az.jpg', 'https://store.steampowered.com/app/232090', '12'],
-            ['Saints Row IV', 'https://images.igdb.com/igdb/image/upload/t_cover_big/jsepbvicgnz6jxhd5pis.jpg', 'https://store.steampowered.com/app/206420', '2'],
+            ['Counter-Strike: Global Offensive', 'https://steamcdn-a.akamaihd.net/steam/apps/730/header.jpg', 'https://store.steampowered.com/app/730', '10'],
+            ['Overwatch', 'https://bnetproduct-a.akamaihd.net//ffa/96290efff85a74a90d3bc6d05041cf2b-prod-card-wide.jpg', 'https://playoverwatch.com/en-us/', '12'],
+            ['Fortnite', 'https://i.ytimg.com/vi/wGB1aLDR2Es/maxresdefault.jpg', 'https://www.epicgames.com/fortnite/en-US/home', '4'],
+            ['Worms W.M.D', 'https://steamcdn-a.akamaihd.net/steam/apps/327030/header.jpg', 'https://store.steampowered.com/app/327030', '6'],
+            ['Killing Floor 2', 'https://steamcdn-a.akamaihd.net/steam/apps/232090/header.jpg', 'https://store.steampowered.com/app/232090', '12'],
+            ['Saints Row IV', 'https://steamcdn-a.akamaihd.net/steam/apps/206420/header.jpg', 'https://store.steampowered.com/app/206420', '2'],
         ];
 
         $count = count($games);

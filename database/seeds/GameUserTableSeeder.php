@@ -1,10 +1,10 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use App\User;
 use App\Game;
+use App\User;
 
-class UserGameTableSeeder extends Seeder
+class GameUserTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -26,7 +26,6 @@ class UserGameTableSeeder extends Seeder
             foreach ($games as $gameName) {
                 $game = Game::where('name', 'LIKE', $gameName)->first();
 
-                # Connect this tag to this book
                 $user->games()->save($game);
             }
         }

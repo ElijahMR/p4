@@ -17,11 +17,11 @@ class CreateFriendsTable extends Migration
             $table->increments('id');
             $table->timestamps();
 
-            $table->integer('user1_id')->unsigned();
-            $table->integer('user2_id')->unsigned();
+            $table->integer('user_id')->unsigned();
+            $table->integer('friend_id')->unsigned();
 
-            $table->foreign('user1_id')->references('id')->on('users');
-            $table->foreign('user2_id')->references('id')->on('users');
+            $table->foreign('user_id')->references('id')->on('users');
+            $table->foreign('friend_id')->references('id')->on('users');
         });
     }
 

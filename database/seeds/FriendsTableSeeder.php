@@ -13,18 +13,27 @@ class FriendsTableSeeder extends Seeder
     public function run()
     {
         $friend = Friend::updateOrCreate(
-            ['user1_id' => '1', 'user2_id' => '2']);
+            ['user_id' => '1', 'friend_id' => '2']);
 
         $friend = Friend::updateOrCreate(
-            ['user1_id' => '1', 'user2_id' => '3']);
+            ['user_id' => '1', 'friend_id' => '3']);
 
         $friend = Friend::updateOrCreate(
-            ['user1_id' => '1', 'user2_id' => '4']);
+            ['user_id' => '1', 'friend_id' => '4']);
 
         $friend = Friend::updateOrCreate(
-            ['user1_id' => '2', 'user2_id' => '3']);
+            ['user_id' => '2', 'friend_id' => '1']);
 
         $friend = Friend::updateOrCreate(
-            ['user1_id' => '3', 'user2_id' => '4']);
+            ['user_id' => '2', 'friend_id' => '3']);
+
+        $friend = Friend::updateOrCreate(
+            ['user_id' => '3', 'friend_id' => '1']);
+
+        $friend = Friend::updateOrCreate(
+            ['user_id' => '3', 'friend_id' => '4']);
+
+        $friend = Friend::updateOrCreate(
+            ['user_id' => '4', 'friend_id' => '1']);
     }
 }
