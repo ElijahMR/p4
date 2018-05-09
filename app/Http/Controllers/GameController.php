@@ -96,11 +96,12 @@ class GameController extends Controller
         $user = request()->user();
         $friends = $request->input('friends');
         if ($friends) {
-            $usersGames = User::with('games')->find($user->id);
-            $usersGames = $usersGames->games()->pluck('games.id');
+            $allGames = User::with('games')->get();
+            $usersGames = $allGames->where('id', $user->id)->pluck('games')->all();
+            $usersGames = $usersGames[0];
             foreach ($friends as $friend) {
-                $friendsGames = User::with('games')->find($friend);
-                $friendsGames = $friendsGames->games()->pluck('games.id');
+                $friendsGames = $allGames->where('id', $friend)->pluck('games')->all();
+                $friendsGames = $friendsGames[0];
                 $usersGames = $usersGames->intersect($friendsGames);
             }
 
