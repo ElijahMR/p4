@@ -24,7 +24,7 @@
 
 <footer class='text-center'>
     &copy; {{ date('Y') }}
-    <a href='https://github.com/ElijahMR/p4'>View on Github</a>
+    <a href='https://github.com/ElijahMR/p4' target='_blank'>View on Github</a>
 </footer>
 
 @stack('body')

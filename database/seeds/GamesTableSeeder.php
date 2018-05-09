@@ -19,6 +19,7 @@ class GamesTableSeeder extends Seeder
             ['Worms W.M.D', 'https://steamcdn-a.akamaihd.net/steam/apps/327030/header.jpg', 'https://store.steampowered.com/app/327030', '6'],
             ['Killing Floor 2', 'https://steamcdn-a.akamaihd.net/steam/apps/232090/header.jpg', 'https://store.steampowered.com/app/232090', '12'],
             ['Saints Row IV', 'https://steamcdn-a.akamaihd.net/steam/apps/206420/header.jpg', 'https://store.steampowered.com/app/206420', '2'],
+            ['Sid Meier\'s Civilization V', 'https://steamcdn-a.akamaihd.net/steam/apps/8930/header.jpg', 'https://store.steampowered.com/app/8930/', '8'],
         ];
 
         $count = count($games);

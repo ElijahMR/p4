@@ -12,6 +12,7 @@
 + Passing variables to all blades via [Laravel blade variables into @yield](https://laracasts.com/discuss/channels/laravel/laravel-blade-variables-into-atyield)
 + Friends table design and access help via [MySQL friends table](https://stackoverflow.com/questions/3009190/mysql-friends-table) and [User Friendships in Laravel](http://alexsears.com/tutorial/user-friendships-laravel/)
 + Ordering results by a pivot table attribute via [Order by pivot table attribute in Eloquent](https://laravel.io/forum/04-17-2014-order-by-pivot-table-attribute-in-eloquent)
++ Getting a collection from a nested relation via [laravel how to get all nested relation to a collection](https://stackoverflow.com/questions/43851529/laravel-how-to-get-all-nested-relation-to-a-collection)
 
 ## Code style divergences
 + My code is longer than 80 characters in a few places.
