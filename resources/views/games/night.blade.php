@@ -5,7 +5,7 @@
 @endsection
 
 @section('content')
-    <h1 class='pt-5 display-1'>The Games You Can Play Are</h1>
+    <h1 class='pt-5 display-1'>The Game(s) You Have In Common:</h1>
     <div class='row justify-content-center pt-2'>
         @if(count($commonGames) > 0)
             @foreach($commonGames as $game)

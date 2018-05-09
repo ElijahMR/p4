@@ -25,7 +25,7 @@
             @include('modules.error-field', ['field' => 'purchase_url'])
         </div>
         <div class='form-group'>
-            <label for='max_players'>Max Players:</label>
+            <label for='max_players'>Max Players(<64):</label>
             <input id='max_players' class='form-control' type='number' name='max_players' value='{{ old('max_players') }}' placeholder='10'  required>
             @include('modules.error-field', ['field' => 'max_players'])
         </div>

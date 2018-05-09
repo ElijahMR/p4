@@ -16,6 +16,7 @@
 
 ## Code style divergences
 + My code is longer than 80 characters in a few places.
++ As the friends table connects the users table to the users table I opted to keep it named friends instead of follow the pivot table naming convention.
 
 ## Notes for instructor
 Email | Password | Friend Code

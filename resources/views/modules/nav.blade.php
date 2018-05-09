@@ -7,7 +7,7 @@
         <li class='nav-item'>
             <form method='POST' id='logout' action='/logout'>
                 {{ csrf_field() }}
-                <a class='nav-link'href='#' onClick='document.getElementById("logout").submit();'>Logout</a>
+                <a class='nav-link'href='#' onClick='document.getElementById("logout").submit();'>Logout - {{ $user->name }}</a>
             </form>
         </li>
     @endif
