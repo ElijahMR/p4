@@ -21,8 +21,12 @@ class FriendController extends Controller
         $user = request()->user();
         $friend = User::where('friend_code', '=', $request->friend_code)->first();
 
+        $alreadyFriends = $user->friends()->where('friends.friend_id', '=', $friend->id)->first();
+
         if (!$friend) {
             $alert = ['danger', 'No user with the specified friend code exists.'];
+        } elseif ($alreadyFriends) {
+            $alert = ['danger', 'Already friends with this user.'];
         } else {
             $user->friends()->attach($friend->id);
             $alert = ['success', 'Friend successfully added.'];

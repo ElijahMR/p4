@@ -23,11 +23,8 @@ class HomeController extends Controller
      */
     public function index()
     {
-        #$user = request()->user();
-
-        #to-do make this user specific
         $user = request()->user();
-        $newGames = $user->games->sortByDesc('created_at')->splice(0, 3);
+        $newGames = $user->games()->orderBy('game_user.created_at', 'desc')->limit(3)->get();
 
         return view('home')->with([
             'newGames' => $newGames,

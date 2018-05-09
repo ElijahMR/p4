@@ -11,6 +11,7 @@
 + Adding custom register fields in Laravel via [Add field register page Laravel 5.4](https://stackoverflow.com/questions/42335001/add-field-register-page-laravel-5-4)
 + Passing variables to all blades via [Laravel blade variables into @yield](https://laracasts.com/discuss/channels/laravel/laravel-blade-variables-into-atyield)
 + Friends table design and access help via [MySQL friends table](https://stackoverflow.com/questions/3009190/mysql-friends-table) and [User Friendships in Laravel](http://alexsears.com/tutorial/user-friendships-laravel/)
++ Ordering results by a pivot table attribute via [Order by pivot table attribute in Eloquent](https://laravel.io/forum/04-17-2014-order-by-pivot-table-attribute-in-eloquent)
 
 ## Code style divergences
 + My code is longer than 80 characters in a few places.
