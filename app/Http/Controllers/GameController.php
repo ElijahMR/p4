@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Game;
+use App\User;
 
 class GameController extends Controller
 {
@@ -83,5 +84,38 @@ class GameController extends Controller
         $alert = ['success', 'Game successfully added to the site library.'];
 
         return redirect('/games')->with('alert', $alert);
+    }
+
+    public function setup()
+    {
+        return view('games.setup');
+    }
+
+    public function night(Request $request)
+    {
+        $user = request()->user();
+        $friends = $request->input('friends');
+        if ($friends) {
+            $usersGames = User::with('games')->find($user->id);
+            $usersGames = $usersGames->games()->pluck('games.id');
+            foreach ($friends as $friend) {
+                $friendsGames = User::with('games')->find($friend);
+                $friendsGames = $friendsGames->games()->pluck('games.id');
+                $usersGames = $usersGames->intersect($friendsGames);
+            }
+
+            $randomGame = 0;
+            if (null !== $request->random) {
+                $randomGame = $usersGames->random();
+            }
+
+            return view('games.night')->with([
+                'commonGames' => $usersGames,
+                'randomGame' => $randomGame,
+            ]);
+        } else {
+            $alert = ['danger', 'No friends selected.'];
+            return redirect('/games/night')->with('alert', $alert);
+        }
     }
 }

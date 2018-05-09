@@ -24,6 +24,8 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('/games/{id}/remove', 'GameController@remove');
     Route::get('/games/create', 'GameController@create');
     Route::post('/games/create', 'GameController@store');
+    Route::get('/games/night', 'GameController@setup');
+    Route::post('/games/night', 'GameController@night');
     Route::get('/friends', 'FriendController@index');
     Route::post('/friends', 'FriendController@add');
     Route::get('/friends/{id}/delete', 'FriendController@delete');

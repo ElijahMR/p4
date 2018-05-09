@@ -6,7 +6,7 @@
 
 @section('content')
     @include('modules.alert-field')
-    <h1 class='pt-5'>Friends</h1>
+    <h1 class='pt-5 display-1'>Friends</h1>
     <p class='pt-3'>You can manage your friends on this page. Friends on this site are a one-way relationship which means if you add someone via their unique friend code you will have them in your friends list but they will have to add you back via your friend code to see you in their friends list. Exchange friend codes with your friends to make sure everyone has each other added.</p>
     <div class='row justify-content-center pt-5'>
         <div class='col-md-4 col-sm-1'>
@@ -18,7 +18,7 @@
             </div>
         </div>
     </div>
-    <h5 class='pt-5'>Add A Friend:</h5>
+    <h2 class='pt-5'>Add A Friend:</h2>
     <div class='row justify-content-center pt-2'>
         <form class='form-inline' method='POST' action='/friends'>
             {{ csrf_field() }}
@@ -30,7 +30,7 @@
             @include('modules.error-field', ['field' => 'friend_code'])
         </form>
     </div>
-    <h5 class='pt-5'>Your Friends:</h5>
+    <h2 class='pt-5'>Your Friends:</h2>
     <div class='row justify-content-center pt-2'>
         <table class='table table-bordered'>
             <thead>
